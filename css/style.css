@@ -3,3 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #000;
+}
+
+header{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-btn{
+    background-color: #4A4A4A;
+    padding: 5px;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 10px 0px 0px;
+}
+
+main{
+    height: 100px;
+    padding: 0px 80px;
+    margin: 0 auto;
+    margin: 100px 0px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container{
+    width: calc(98% / 7);
+    margin: 0px 2px 15px 2px;
+    position: relative;
+}
+
+.user {
+    position: relative;
+}
+
+.user img{
+    width: 100%;
+}
+
+.user .name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer i:not(.arrow){
+    font-size: 30px;
+}
+
+.share-btn{
+    color: green;
+}
+
+.end-btn{
+    background-color: #444;
+    padding: 30px 15px;
+}
