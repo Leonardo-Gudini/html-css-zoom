@@ -6,46 +6,45 @@
 
 body{
     background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 70px;
+    height: 60px;
     width: 100%;
-    z-index: 999;
+    text-align: right;
 }
 
 .header-btn{
     background-color: #4A4A4A;
     padding: 5px;
-    float: right;
+    text-align: right;
     color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 20px 10px 0px 0px;
 }
 
+
+/* inizio stile main*/
 main{
-    height: 100px;
-    padding: 0px 80px;
-    margin: 0 auto;
-    margin: 100px 0px;
+    height: calc(100vh - 120px);
     color: white;
+
+    overflow: scroll;
+    padding: 0px 45px;
+}
+
+.main-container{
     display: flex;
     flex-wrap: wrap;
 }
 
-.main-container{
-    width: calc(98% / 7);
-    margin: 0px 2px 15px 2px;
-    position: relative;
-}
-
 .user {
     position: relative;
+    padding: 5px;
+    width: calc(100% / 7);
 }
 
 .user img{
@@ -54,23 +53,23 @@ main{
 
 .user .name{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
     padding: 5px 5px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+
+/* inizio stile footer*/
 footer{
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: #333;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    font-size: 12px;
 }
 
 ul{
@@ -82,13 +81,15 @@ ul{
 li{
     display: flex;
     flex-direction: column;
-    margin: 0px 15px;
-    text-align: center;
+    margin: 0px 10px;
+    align-items: center;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 footer i:not(.arrow){
-    font-size: 30px;
+    font-size: 24px;
+    padding-bottom: 5px;
 }
 
 .share-btn{
@@ -97,5 +98,9 @@ footer i:not(.arrow){
 
 .end-btn{
     background-color: #444;
-    padding: 30px 15px;
+    height: 100%;
+    padding: 0px 15px;
+    color: red;
+    border: none;
+    cursor: pointer;
 }
